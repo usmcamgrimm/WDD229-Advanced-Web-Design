@@ -1,4 +1,16 @@
 html, body { 
     margin: 0;
+    font-size: 16px;
     background-color: #fefefe;
+}
+h1 {
+    font-family: 'Lemonada';
+    font-size: 4em;
+    color: #024b90;
+    text-shadow: 1px 3px 5px #010101;
+    text-align: center;
+}
+p {
+    font-family: 'Cambay';
+    font-size: 1.2em;
 }
