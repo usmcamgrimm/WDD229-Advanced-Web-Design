@@ -1,8 +1,171 @@
 @import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700);
+
 * {
 	padding: 0;
 	margin: 0;
 	box-sizing: border-box;
 }
 
+body {
+	background: #454545;
+	padding: 2%;
+	font-family: 'Josefin Sans', sans-serif;
+	font-size: 22px;
+	color: #fafafa;
+	line-height: 26px;
+	text-align: justify;
+}
 
+header {
+	text-align: center;
+}
+
+p {
+	text-indent: 5%;
+}
+
+h2 {
+	text-align: center;
+	line-height: 125%;
+}
+
+/* !Start Navigation */
+nav {
+	width: 100%;
+	margin: 1% auto;
+	overflow: hidden;
+}
+
+ul {
+	list-style: none;
+	overflow: hidden;
+}
+
+nav li a {
+	background: #737373;
+	border-right: 1px solid #454545;
+	color: #fafafa;
+	display: block;
+	float: left;
+	font-size: 120%;
+	font-weight: 600;
+	padding: 1%;
+	text-align: center;
+	text-decoration: none;
+	width: 16.65%;
+	transition: background 0.5s ease;
+}
+
+nav li a:hover,
+nav li.active a {
+	background: #dadada;
+	color: #454545;
+}
+
+nav li:last-child a {
+	border: none;
+}
+
+/* !End navigation */
+
+.banner {
+	width: 100%;
+}
+
+.banner img {
+	width: 100% !important;
+	height: auto;
+}
+
+section {
+	float: left;
+	width: 60%;
+	padding: 2%;
+	margin: 1% 0;
+	background: #6b6b6b;
+}
+
+aside {
+	float: right;
+	width: 38%;
+	padding: 2%;
+	margin: 1% 0;
+	background: #6b6b6b;
+}
+
+footer {
+	float: left;
+	width: 100%;
+	padding: 2%;
+	margin: 1% 0;
+	background: #6b6b6b;
+}
+
+.one-third {
+	float: left;
+	width: 31%;
+	padding: 1%;
+	margin: 0 1%;
+}
+
+/* !Media Queries */
+@media only screen and (max-width: 780px) {
+	nav {
+		margin: 2% auto;
+	}
+
+	nav li a {
+		width: 33.3%;
+		font-size: 90%;
+		padding-top: 2%;
+		padding-bottom: 2%;
+		border-bottom: 1px solid #454545;
+	}
+
+	nav li:nth-child(3) a {
+		border-right: none;
+	}
+
+	section {
+		width: 100%;
+	}
+
+	aside {
+		width: 100%;
+	}
+
+	.one-third {
+		width: 100%;
+	}
+
+	h2 {
+		font-size: 105%;
+	}
+
+	p {
+		font-size: 95%;
+	}
+}
+
+@media only screen and (max-width: 580px) {
+	nav li a {
+		width: 50%;
+		font-size: 82%;
+	}
+
+	nav li:nth-child(even) a {
+		border-right: none;
+	}
+
+	nav li:nth-child(3) a {
+		border-right: 1px solid #454545;
+	}
+
+	h2 {
+		font-size: 95%;
+	}
+
+	p {
+		font-size: 88%;
+	}
+}
