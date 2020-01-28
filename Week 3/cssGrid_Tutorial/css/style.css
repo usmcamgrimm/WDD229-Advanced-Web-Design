@@ -3,3 +3,97 @@ body {
 	margin: 0;
 	font-size: 140%;
 }
+
+.wrapper {
+	width: 100%;
+	color: #666666;
+}
+
+.logo img {
+	padding: 10px 20px;
+}
+
+.fa {
+	padding: 10px;
+	font-size: 30px;
+	width: 20px;
+	text-align: center;
+	text-decoration: none;
+	margin: 10px 2px;
+	color: #3e474f;
+}
+
+.fa:hover {
+	color: #666666;
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+}
+
+/* Grid Start */
+.logo {
+	grid-area: logo;
+}
+
+.social {
+	grid-area: social;
+}
+
+.banner {
+	grid-area: banner;
+}
+
+.sidebar {
+	grid-area: sidebar;
+	padding: 10px;
+}
+
+.content {
+	grid-area: content;
+	padding: 10px;
+}
+
+.footer {
+	grid-area: footer;
+	background-color: #3e474f;
+	color: #ffffff;
+	padding: 10px;
+	text-align: center;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-areas:
+		"logo"
+		"social"
+		"banner"
+		"content"
+		"sidebar"
+		"footer";
+}
+
+@media only screen and (max-width: 779px) {
+	.wrapper {
+		grid-template-columns: 20% auto;
+		grid-template-areas:
+			"logo logo"
+			"social social"
+			"banner banner"
+			"content content"
+			"sidebar sidebar"
+			"footer footer";
+	}
+}
+
+@media only screen and (min-width: 780px) {
+	.wrapper {
+		grid-template-columns: 200px auto 350px;
+		grid-template-areas:
+			"logo logo social"
+			"banner banner banner"
+			"content content sidebar"
+			"footer footer footer";
+	}
+}
