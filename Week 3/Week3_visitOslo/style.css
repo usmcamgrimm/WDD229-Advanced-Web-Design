@@ -1,3 +1,4 @@
+/* Color pallette: http://palette.site/palettes/7a9116 */
 * {
     box-sizing: border-box;
 }
@@ -6,17 +7,17 @@ html, body {
     font-size: 16px;
     background-color: #fefefe;
 }
-section {
+.wrapper {
     margin: 0 auto;
     padding: 2em;
     text-align: center;
     height: 100vh;
 }
 h1 {
-    font-family: 'Lemonada';
+    font-family: 'Poiret One';
     font-size: 5em;
     color: #024b90;
-    text-shadow: 1px 3px 5px #010101;
+    text-shadow: 1px 2px 5px #666666;
     text-align: center;
     margin:0 auto;
 }
@@ -24,9 +25,13 @@ p {
     font-family: 'Cambay';
     font-size: 1.2em;
 }
+hr {
+    width: 30%;
+    background-color: #838e98
+}
 nav {
     list-style: none;
-    font-family: 'Cambay';
+    font-family: 'Spinnaker';
     font-size: 1.4em;
     margin: 0;
     padding: 0;
@@ -40,4 +45,5 @@ nav li a {
     text-decoration: none;
     list-style: none;
     margin-right: 1em;
+    border-right: 2px solid #838e98;
 }
