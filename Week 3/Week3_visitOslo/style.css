@@ -2,33 +2,58 @@
 * {
     box-sizing: border-box;
 }
-html, body { 
+
+html,
+body {
     margin: 0;
     font-size: 16px;
     background-color: #fefefe;
 }
+
 .wrapper {
     margin: 0 auto;
     padding: 2em;
     text-align: center;
-    height: 100vh;
+    background-image: url(images/osloSkyline.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 72vh;
 }
+
 h1 {
     font-family: 'Comfortaa';
-    font-size: 5em;
-    color: #024b90;
+    font-size: 6em;
+    color: #fefefe;
     text-shadow: 1px 2px 5px #666666;
     text-align: center;
-    margin:0 auto;
+    margin-top: 2em;
 }
+
+h2 {
+    font-family: 'Comfortaa';
+    font-size: 5em;
+    color: #002566;
+    text-shadow: 1px 2px 5px #666666;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+}
+
 p {
-    font-family: 'Cambay';
+    font-family: 'Spinnaker';
     font-size: 1.2em;
+    text-align: center;
 }
+
 hr {
     width: 30%;
     background-color: #838e98
 }
+
 nav {
     list-style: none;
     font-family: 'Spinnaker';
@@ -36,11 +61,13 @@ nav {
     margin: 0;
     padding: 0;
 }
+
 nav ul {
     display: flex;
     list-style: none;
     justify-content: center;
 }
+
 nav li a {
     text-decoration: none;
     list-style: none;
