@@ -89,9 +89,17 @@ nav li a:hover {
     display: flex;
     justify-content: space-around;
 }
+/* !Start Grid */
+
+/* !End Grid */
 
 /* *Media Queries */
-@media only screen and (max-width: 780px) {
+@media only screen and (max-width: 1024px) {
+    p {
+        font-size: 1.2em;
+    }
+}
+@media only screen and (max-width: 580px) {
     nav {
         display: flex;
         padding: 1em;
