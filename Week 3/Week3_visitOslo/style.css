@@ -89,3 +89,11 @@ nav li a:hover {
     display: flex;
     justify-content: space-around;
 }
+
+/* *Media Queries */
+@media only screen and (max-width: 780px) {
+    nav {
+        display: flex;
+        padding: 1em;
+    }
+}
