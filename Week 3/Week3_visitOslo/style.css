@@ -96,4 +96,17 @@ nav li a:hover {
         display: flex;
         padding: 1em;
     }
+    h1 {
+        font-size: 3em;
+    }
+    .wrapper {
+        width: 100%;
+    }
+    p {
+        font-size: 1em;
+    }
+    section {
+        width: 90%;
+        padding: 10px;
+    }
 }
