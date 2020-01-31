@@ -60,6 +60,7 @@ nav {
     font-size: 1.4em;
     margin: 0;
     padding: 0;
+    color: #ee2626;
 }
 
 nav ul {
@@ -72,4 +73,14 @@ nav li a {
     text-decoration: none;
     list-style: none;
     margin-right: 1em;
+    color: #ee2626;
+    text-shadow: 0 1px 1px #666666;
+}
+
+nav li:hover {
+    transform: scale(1.1);
+}
+
+nav li a:hover {
+    text-shadow: 0 1px 2px #666666;
 }
