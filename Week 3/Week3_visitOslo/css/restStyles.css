@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    font-size: 16px;
+    padding: 12px;
+    background-color: #fefefe;
+}
+
+h2 {
+    font-family: 'Comfortaa';
+    font-size: 4em;
+    color: #002566;
+    text-shadow: 1px 2px 5px #666666;
+    text-align: center;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+p {
+    font-family: 'Spinnaker';
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.nav {
+    list-style: none;
+    font-family: 'Spinnaker';
+    font-size: 1.4em;
+    margin: 0;
+    padding: 0;
+    color: #ee2626;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav li a {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 1em;
+    color: #ee2626;
+    text-shadow: 0 1px 1px #666666;
+}
+
+.nav li:hover {
+    transform: scale(1.1);
+}
+
+.nav li a:hover {
+    text-shadow: 0 1px 2px #666666;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+}
