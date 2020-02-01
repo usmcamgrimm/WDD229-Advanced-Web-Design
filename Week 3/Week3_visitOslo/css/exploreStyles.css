@@ -1,0 +1,246 @@
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    margin: 0;
+    font-size: 16px;
+    background-color: #fefefe;
+}
+
+h2 {
+    font-family: 'Comfortaa';
+    font-size: 4em;
+    color: #002566;
+    text-shadow: 1px 2px 5px #666666;
+    text-align: center;
+    margin: 0 auto;
+    padding: 12px;
+}
+
+p {
+    font-family: 'Spinnaker';
+    font-size: 1.2em;
+    text-align: center;
+}
+
+/* !Nav */
+.nav {
+    list-style: none;
+    font-family: 'Spinnaker';
+    font-size: 1.4em;
+    margin: 0;
+    padding: 1em 0;
+    color: #ee2626;
+}
+
+.nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+
+.nav li a {
+    text-decoration: none;
+    list-style: none;
+    margin-right: 1em;
+    color: #ee2626;
+    text-shadow: 0 1px 1px #666666;
+}
+
+.nav li:hover {
+    transform: scale(1.1);
+}
+
+.nav li a:hover {
+    text-shadow: 0 1px 2px #666666;
+}
+
+/* !Grid Styling */
+.container {
+    display: grid;
+    width: 100%;
+    height: 1300px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 100px 1fr 90px 1fr 1fr;
+    grid-gap: 2em;
+    justify-items: center;
+    grid-template-areas:
+        "header nav"
+        "image1 image2"
+        "imageContent1 imageContent2"
+        "image3 image4"
+        "imageContent3 imageContent4";
+}
+
+.header {
+    grid-area: header;
+}
+
+.nav {
+    grid-area: nav;
+}
+
+.image1 {
+    grid-area: image1;
+}
+
+.image2 {
+    grid-area: image2;
+}
+
+.image3 {
+    grid-area: image3;
+}
+
+.image4 {
+    grid-area: image4;
+}
+
+.imageContent1 {
+    grid-area: imageContent1;
+    padding: 0 3rem;
+}
+
+.imageContent2 {
+    grid-area: imageContent2;
+    padding: 0 3rem;
+}
+
+.imageContent3 {
+    grid-area: imageContent3;
+    padding: 0 3rem;
+}
+
+.imageContent4 {
+    grid-area: imageContent4;
+    padding: 0 3rem;
+}
+
+@media only screen and (max-width: 580px) {
+    .container {
+        display: grid;
+        height: 1300px;
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+        justify-items: center;
+        grid-template-areas:
+            "header"
+            "nav"
+            "image1"
+            "imageContent1"
+            "image2"
+            "imageContent2"
+            "image3"
+            "imageContent3"
+            "image4"
+            "imageContent4";
+    }
+
+    h2 {
+        font-size: 40px;
+    }
+
+    .header {
+        grid-area: header;
+        padding-top: 1em;
+    }
+
+    .nav {
+        grid-area: nav;
+        padding: 0;
+    }
+
+    .image1 {
+        grid-area: image1;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image2 {
+        grid-area: image2;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image3 {
+        grid-area: image3;
+        display: flex;
+        justify-content: center;
+    }
+
+    .image4 {
+        grid-area: image4;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .imageContent1 {
+        grid-area: imageContent1;
+    }
+
+    .imageContent2 {
+        grid-area: imageContent2;
+    }
+
+    .imageContent3 {
+        grid-area: imageContent3;
+    }
+
+    .imageContent4 {
+        grid-area: imageContent4;
+    }
+}
+
+/*
+.container {
+    display: grid;
+    justify-items: center;
+    grid-template-areas:
+        "nav"
+        "header"
+        "image1"
+        "image2"
+        "image3"
+        "image4"
+        "imageContent1"
+        "imageContent2"
+        "imageContent3"
+        "imageContent4";
+}
+
+@media only screen and (min-width: 1024px) {
+    .container {
+        grid-template-columns: 45% 45%;
+        grid-template:
+            "nav nav"
+            "header header"
+            "image1 image2"
+            "imageContent1 imageContent2"
+            "image3 image4"
+            "imageContent3 imageContent4";
+    }
+}
+
+@media only screen and (max-width: 580px) {
+    h2 {
+        font-size: 3em;
+        padding: 0;
+    }
+
+    .container {
+        grid-template-columns: 76%;
+        justify-items: center;
+        grid-template:
+            "nav"
+            "header"
+            "image1 image2"
+            "imageContent1 imageContent2"
+            "image3 image4"
+            "imageContent3 imageContent4";
+        overflow: hidden;
+    }
+}
+*/
