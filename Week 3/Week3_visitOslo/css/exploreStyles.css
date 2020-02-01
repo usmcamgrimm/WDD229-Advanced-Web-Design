@@ -118,7 +118,7 @@ p {
     padding: 0 3rem;
 }
 
-@media only screen and (max-width: 580px) {
+@media only screen and (max-width: 1024px) {
     .container {
         display: grid;
         height: 1300px;
@@ -155,92 +155,53 @@ p {
     .image1 {
         grid-area: image1;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-content: center;
+        padding: 0 12px;
     }
 
     .image2 {
         grid-area: image2;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-content: center;
+        padding: 0 12px;
     }
 
     .image3 {
         grid-area: image3;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-content: center;
+        padding: 0 12px;
     }
 
     .image4 {
         grid-area: image4;
         display: flex;
-        justify-content: center;
+        justify-content: space-around;
+        align-content: center;
+        padding: 0 12px;
 
     }
 
     .imageContent1 {
         grid-area: imageContent1;
+        padding: 0 5em;
     }
 
     .imageContent2 {
         grid-area: imageContent2;
+        padding: 0 5em;
     }
 
     .imageContent3 {
         grid-area: imageContent3;
+        padding: 0 5em;
     }
 
     .imageContent4 {
         grid-area: imageContent4;
+        padding: 0 5em;
     }
 }
-
-/*
-.container {
-    display: grid;
-    justify-items: center;
-    grid-template-areas:
-        "nav"
-        "header"
-        "image1"
-        "image2"
-        "image3"
-        "image4"
-        "imageContent1"
-        "imageContent2"
-        "imageContent3"
-        "imageContent4";
-}
-
-@media only screen and (min-width: 1024px) {
-    .container {
-        grid-template-columns: 45% 45%;
-        grid-template:
-            "nav nav"
-            "header header"
-            "image1 image2"
-            "imageContent1 imageContent2"
-            "image3 image4"
-            "imageContent3 imageContent4";
-    }
-}
-
-@media only screen and (max-width: 580px) {
-    h2 {
-        font-size: 3em;
-        padding: 0;
-    }
-
-    .container {
-        grid-template-columns: 76%;
-        justify-items: center;
-        grid-template:
-            "nav"
-            "header"
-            "image1 image2"
-            "imageContent1 imageContent2"
-            "image3 image4"
-            "imageContent3 imageContent4";
-        overflow: hidden;
-    }
-}
-*/
